@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)http://dev.uno.cs.walmart.com/orders/00489860_dev -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>ASDA - Order 00489860_dev</title>
+        <link rel="icon" href="http://dev.uno.cs.walmart.com/assets/favicon_uno.ico">
+        <link href="http://dev.uno.cs.walmart.com/assets/application.css?body=1" media="all" rel="stylesheet">
+        <script src="./fdsf_files/jquery.js"></script>
+<script src="./fdsf_files/jquery_ujs.js"></script>
+<script src="./fdsf_files/effect.js"></script>
+<script src="./fdsf_files/effect-blind.js"></script>
+<script src="./fdsf_files/jquery.cookie.js"></script>
+<script src="./fdsf_files/bootstrap-modal.js"></script>
+<script src="./fdsf_files/bootstrap-dropdown.js"></script>
+<script src="./fdsf_files/bootstrap-tab.js"></script>
+<script src="./fdsf_files/bootstrap-tooltip.js"></script>
+<script src="./fdsf_files/faye.js"></script>
+<script src="./fdsf_files/jquery.inputmask.js"></script>
+<script src="./fdsf_files/jquery.inputmask.numeric.extensions.js"></script>
+<script src="./fdsf_files/shipments.js"></script>
+<script src="./fdsf_files/underscore.js"></script>
+<script src="./fdsf_files/underscore(1).js"></script>
+<script src="./fdsf_files/backbone.js"></script>
+<script src="./fdsf_files/backbone(1).js"></script>
+<script src="./fdsf_files/atlantico.js"></script>
+<script src="./fdsf_files/collapse.js"></script>
+<script src="./fdsf_files/manager.js"></script>
+<script src="./fdsf_files/bootstrap-sortable.js"></script>
+<script src="./fdsf_files/dataTables.bootstrap.js"></script>
+<script src="./fdsf_files/moment.min.js"></script>
+<script src="./fdsf_files/orders.js"></script>
+<script src="./fdsf_files/application.js"></script>
+        <meta content="authenticity_token" name="csrf-param">
+<meta content="yitbbeZEbDfZFawZDvexF55TeMYk7bZNxIAahBEt5n4=" name="csrf-token">
+    </head>
+    <body cz-shortcut-listen="true" class="modal-open">
+        <nav id="header" class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="pull-left logo-name">
+            <span class="title-header pull-left"><a href="http://dev.uno.cs.walmart.com/"><img src="./fdsf_files/asda_logo.gif"></a></span>
+            <span class="header-logo-text pull-left">ASDA Direct &amp; George Customer Service</span>
+        </div>
+
+          <div class="pull-left search-box-center">	 
+              <form accept-charset="UTF-8" action="http://dev.uno.cs.walmart.com/search" class="search-order no-padding no-margin" id="search_form" method="get"><div style="display:none"><input name="utf8" type="hidden" value="✓"></div>
+                  <input autofocus="autofocus" name="q" class="search-query span2 cl-b block search-box-width" placeholder="Search by Order Number or Postal + Surname" type="text">
+</form>                <i class="icon-search pull-right search-box-icon" id="search-icon" style="cursor: pointer"></i>
+                <div class="head-spinner pull-left"><img src="./fdsf_files/ajax-loader.gif"></div>
+            </div>
+
+            <div class="right-header-items">  
+                <ul class="nav nav-pills pull-right">
+                    <li><a href="http://dev.uno.cs.walmart.com/announcements"><span class="glyphicon glyphicon-bullhorn"></span>&nbsp;Announcements</a></li>
+                    <li><a href="http://dev.uno.cs.walmart.com/orders/00489860_dev#"><span class="glyphicon glyphicon-pushpin"></span>&nbsp;Ticket</a></li>
+                    <li class="dropdown">
+                        <a href="http://dev.uno.cs.walmart.com/orders/00489860_dev#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>&nbsp;z@yahoo.com<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="http://dev.uno.cs.walmart.com/orders/00489860_dev#"><span class="glyphicon glyphicon-user"></span>&nbsp;Profile</a></li>
+                            <li>
+                                <a data-method="delete" href="http://dev.uno.cs.walmart.com/users/sign_out" rel="nofollow">
+                                  <span class="glyphicon glyphicon-log-out"></span>&nbsp;Sign Out
+</a>                            </li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">Language</li>
+                              <li>
+                                  <a href="http://dev.uno.cs.walmart.com/languages/en_US">
+                                      <img src="./fdsf_files/en_US.png" class="cntry_flag">&nbsp;English (UK)
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="http://dev.uno.cs.walmart.com/languages/pt_BR">
+                                      <img src="./fdsf_files/pt_BR.png" class="cntry_flag">&nbsp;Português
+                                  </a>
+                              </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+      </div>
+  </nav>
+        <div style="margin-top:60px"> </div>
+          <section id="search">
+              
+          </section>
+
+        <div class="clearfix container" id="content">
+            <div class="row">
+                <section id="app" class="span12">
+                    <section id="contents" class="clearfix">
+
+                        
+
+<div class="backbone-container clearfix">
+    <div class="box clearfix account-details">
+    <div class="default-list no-padding account-header">
+        <div class="infos clearfix" style="padding-top: 20px">
+            <div class="account-data pull-left">
+                <div class="order_history_arrow left-spacer" id="history-down-arrow">
+                    <i id="pull-trigger" class="icon-circle-arrow-down inline-block icon-2x" style="cursor:pointer"></i>
+                </div>
+            </div>
+            <div class="pull-left">
+                <ul class="clearfix">
+                    <li class="pull-left left-spacer ts-customer-id">
+                        <a class="pull-left" data-placement="bottom" href="http://dev.uno.cs.walmart.com/orders/00489860_dev#" id="customer-link" rel="tooltip" title="View All Orders">
+                            <i class="icon-user"></i>
+                            <span class="name"><strong>Asda Automation</strong></span>
+</a>                      </li>
+                      <li class="pull-left left-spacer ts-customer-email">
+                          <i class="icon-envelope-alt"></i>
+                          <span>auto1397777261674og@devmail.ecommera.net</span>
+                      </li>
+                      <li class="pull-left left-spacer"><i class="icon-phone"></i>
+                          <span>(07) 98155-5555</span>
+                          
+                          
+                      </li>
+
+                  </ul>
+              </div>
+
+          </div>
+          <div style="display:none" id="order-history">
+              <div class="pull-right box each-box" style="width: 90%; margin:40px 70px 20px 20px;">
+  <div class="tabbable tabs-top tabbable-delivery no-margin">
+    <ul id="new-tabs" class="nav nav-tabs">
+      <li class="active clearfix">
+        <a class="tab-sige clearfix" data-toggle="tab" href="http://dev.uno.cs.walmart.com/orders/00489860_dev#overall-order-history" id="sige_history_button">
+          <span class="pull-left">
+            <span class="icon inline-block">
+              <i class="icon-list inline-block"></i>
+            </span>
+
+            <span class="inline-block"> All Orders: <span id="all_orders_total_amount">£40.11</span>  </span>
+          </span>
+		<span class="number-circle ts-total-tickets pull-right"><span id="all_orders_total">3</span> </span>
+</a>      </li>
+    </ul>
+  </div>
+
+  <div class="tab-content">
+    <section id="overall-order-history" class="tab-pane clearfix active no-padding"><br>
+<div class="input-group"> <span class="input-group-addon">Search: </span>
+    <input id="filter" type="text" class="form-control" placeholder="Type here...">
+</div>
+<table class="table table-striped width_98_per sortable">
+  <thead>
+    <tr>
+      <th data-sortcolumn="0" data-sortkey="0-0">Order ID</th>
+      <th data-dateformat="MM/DD/YYYY" data-sortcolumn="1" data-sortkey="1-0">Order Date</th>
+      <th data-sortcolumn="2" data-sortkey="2-0">Total Collected</th>
+      <th data-sortcolumn="3" data-sortkey="3-0">Items</th>
+    </tr>
+  </thead>
+
+  <tbody class="searchable">
+	 <tr class="top-border">
+	   <td data-value="00489860_dev"><a href="./fdsf_files/fdsf.html">00489860_dev</a></td>
+	   <td data-value="04/17/2014">04/17/2014</td>
+	   <td data-value="£13.37">£13.37</td>
+	   <td data-value="0">0</td>
+	 </tr>
+	 <tr class="top-border">
+	   <td data-value="usomstest1_dev"><a href="http://dev.uno.cs.walmart.com/orders/usomstest1_dev">usomstest1_dev</a></td>
+	   <td data-value="04/17/2014">04/17/2014</td>
+	   <td data-value="£13.37">£13.37</td>
+	   <td data-value="0">0</td>
+	 </tr>
+	 <tr class="top-border">
+	   <td data-value="usomstest2_dev"><a href="http://dev.uno.cs.walmart.com/orders/usomstest2_dev">usomstest2_dev</a></td>
+	   <td data-value="04/17/2014">04/17/2014</td>
+	   <td data-value="£13.37">£13.37</td>
+	   <td data-value="0">0</td>
+	 </tr>
+  </tbody>
+</table>
+
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $("#all_orders_total").html("3");
+    $("#all_orders_total_amount").html("£40.11");
+    (function ($) {
+            $('#filter').keyup(function () {
+                var rex = new RegExp($(this).val(), 'i');
+                $('.searchable tr').hide();
+                $('.searchable tr').filter(function () {
+                    return rex.test($(this).text());
+                }).show();
+
+            });
+        }(jQuery));
+	   
+  });
+</script>
+
+</section>
+  </div>
+</div>
+
+          </div>
+      </div>
+  </div>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+        $('#history-down-arrow').click(function () {
+            if ($('#order-history:visible').length) {
+                $('#order-history').slideUp('slow');
+                $('#pull-trigger').removeClass('icon-circle-arrow-up');
+                $('#pull-trigger').addClass('icon-circle-arrow-down');
+            } else {
+                $('#order-history').slideDown('slow');
+                $('#pull-trigger').removeClass('icon-circle-arrow-down');
+                $('#pull-trigger').addClass('icon-circle-arrow-up');
+            }
+        });
+    });
+  </script>
+
+
+    <div id="order-detail" class="row box top-details order-details clearfix relative default-list no-padding">
+        <div class="header min clearfix">
+            <div class="order-details pull-left">
+                <div class="image-list pull-left">
+                    <span class="ico-order relative">
+                        <i class="icon-file-text inline-block"></i>
+                    </span>
+                </div>
+
+                <div class="deadline pull-left order-number-info left-spacer">
+                    Order<br>
+                    <strong class="ts-order-number">00489860_dev</strong>
+                </div>
+            </div>
+
+            <div class="order-details-list pull-right">
+                <div class="pull-left">
+                    <span class="deadline pull-right">
+                        <span class="ts-order-total-items">Items</span>
+                        <br>
+                        <strong class="order-header-values">1</strong>
+                    </span>
+
+                    <span class="deadline pull-right">
+                        <span class="ts-order-total-value">Total</span>
+                        <br>
+                        <strong class="order-header-values">£0.00</strong>
+                    </span>
+
+
+                    <span class="deadline pull-right">
+                        <span class="ts-order-channel"><span class="translation_missing" title="translation missing: en_US.order.order_type">Order Type</span></span>
+                        <br>
+                        <strong>REGULAR</strong>
+                    </span>
+
+                    <span class="deadline pull-right"> 		
+                        <span class="ts-order-channel">Placed On</span>
+                        <br>
+                        <strong>04/17/2014 23:28:09</strong>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <span class="divider"></span>
+
+        <div class="infos">
+            <div class="row-fluid clearfix">
+                <div class="span6 pull-left order-details-info">
+  <div class="clearfix">
+    
+  </div>
+
+  <div class="row-fluid clearfix">
+    <div class="span6 order-details-info">
+      <div class="address-info">
+        <strong class="block title">
+          <i class="icon-home"></i>
+          <span class="ts-shipment-address">Delivery Address</span>
+        </strong>
+
+        <b>RESIDENTIAL:</b>
+<span class="block ts-address-name">
+  Leeds Living Store
+</span>
+
+<span class="block ts-address-street">
+  Crown Point Retail Park,
+</span>
+
+<span class="block ts-address-district"></span>
+
+<span class="block ts-address-city-state-zip">
+  Leeds,
+  West Yorkshire<br>
+  LS10 1ET
+</span>
+
+<span class="block ts-address-landmark"></span>
+
+
+      </div>
+    </div>
+
+    <div class="span6 order-details-info">
+      <div class="address-info">
+        <strong class="block title">
+          <i class="icon-home"></i>
+          <span class="ts-billing-address">Billing Address</span>
+        </strong>
+
+          <div class="each-billing-address">
+            <b>RESIDENTIAL:</b>
+<span class="block ts-address-name">
+  Asda Automation
+</span>
+
+<span class="block ts-address-street">
+  1-45 the Willows,
+</span>
+
+<span class="block ts-address-district"></span>
+
+<span class="block ts-address-city-state-zip">
+  Chelmsford,
+  <br>
+  CM3 3DJ
+</span>
+
+<span class="block ts-address-landmark"></span>
+
+
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+                <div class="span4 order-details-list pull-right">
+  <div id="order-detail-payment" class="pull-right box-payment">
+    <div class="header-payment clearfix">
+      <div class="pull-left">Payment</div>
+      <div class="pull-right">Amount</div>
+    </div>
+
+      <div class="each-payment clearfix">
+        <div class="pull-left ts-payment">
+          <strong>
+              <i class="icon-visa ts-walmart-payment ts-visa"></i>
+
+              VISA - 1244
+          </strong>
+        </div>
+
+        <div class="pull-right word-wrap">£0.00</div>
+      </div>
+  </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="content-2-boxes clearfix">
+        <div id="deliveryBox" class="pull-left big-box">
+  <div class="box-small box-small-delivery" style="width:100%">
+    <div class="tabbable tabs-top tabbable-delivery no-margin">
+      <ul id="new-tabs" class="nav nav-tabs">
+        <li class="clearfix">
+          <a class="clearfix" data-toggle="tab" href="http://dev.uno.cs.walmart.com/orders/00489860_dev#tab-all-order-items" id="deliveries_button">
+            <span class="pull-left">
+              <span class="icon inline-block">
+                <i class="icon-ellipsis-vertical inline-block"></i>
+              </span>
+              <span class="inline-block">Items</span>
+            </span>
+            <span class="number-circle pull-right">1</span>
+</a>        </li>
+		 
+        <li class="clearfix">
+          <a class="clearfix" data-toggle="tab" href="http://dev.uno.cs.walmart.com/orders/00489860_dev#tab-all-deliveries" id="deliveries_button">
+            <span class="pull-left">
+              <span class="icon inline-block">
+                <i class="icon-truck inline-block"></i>
+              </span>
+              <span class="inline-block">All Shipments</span>
+            </span>
+            <span class="number-circle pull-right">0</span>
+</a>        </li>
+        <li class="clearfix active">
+          <a class="tab-sige clearfix" data-toggle="tab" href="http://dev.uno.cs.walmart.com/orders/00489860_dev#tab-sige_history" id="sige_history_button">
+            <span class="pull-left">
+              <span class="icon inline-block">
+                <i class="icon-list inline-block"></i>
+              </span>
+
+              <span class="inline-block">Notes</span>
+            </span>
+		  <span class="number-circle pull-right">14</span>
+</a>        </li>
+        <li class="clearfix">
+          <a class="tab-payment clearfix" data-toggle="tab" href="http://dev.uno.cs.walmart.com/orders/00489860_dev#tab-payment_history" id="payment_history_button">
+            <span class="pull-left">
+              <span class="icon inline-block">
+                <i class="icon-credit-card inline-block"></i>
+              </span>
+
+              <span class="inline-block">Payments</span>
+            </span>
+</a>        </li>
+      </ul>
+    </div>
+
+    <div class="tab-content">
+      <section id="tab-all-deliveries" class="tab-pane clearfix no-padding ts-shipments">
+        <table class="table table-striped width_98_per sortable">
+    <thead>
+        <tr>
+            <th data-sortcolumn="0" data-sortkey="0-0">Tracking Code</th>   
+            <th data-sortcolumn="1" data-sortkey="1-0">Carrier Code</th>
+            <th data-sortcolumn="2" data-sortkey="2-0">Tracking URL</th>
+            <th data-sortcolumn="3" data-sortkey="3-0">Items</th>
+            <th data-sortcolumn="4" data-sortkey="4-0">Actions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+                  </tbody>
+              </table>
+      </section>
+      <section id="tab-actions-deliveries" class="tab-pane clearfix no-padding">
+        <div class="loading-container">
+  
+</div>
+
+      </section>
+      <section id="tab-all-order-items" class="tab-pane clearfix no-padding">
+        <table class="table table-striped width_98_per sortable">
+  <thead>
+    <tr>
+      <th data-sortcolumn="0" data-sortkey="0-0">Product ID</th>
+      <th data-sortcolumn="1" data-sortkey="1-0">Item Name</th>
+      <th data-sortcolumn="2" data-sortkey="2-0">Line Qty</th>
+      <th data-sortcolumn="3" data-sortkey="3-0">Amount</th>
+      <th data-sortcolumn="4" data-sortkey="4-0">Status</th>
+      <th data-sortcolumn="5" data-sortkey="5-0">Expect Delivery Date</th>
+    </tr>
+  </thead>
+
+  <tbody>
+      <tr class="top-border">
+  <td data-value="1414141414">1414141414</td>
+  <td data-value="AUTOMATION GM PRODUCT SIMPLE">AUTOMATION GM PRODUCT SIMPLE</td>
+  <td data-value="1">1</td>
+  <td data-value="£0.00">£0.00</td>
+  <td data-value="PO Created">PO Created</td>
+  <td data-value=""></td>
+</tr>
+  </tbody>
+</table>
+      </section>
+      <section id="tab-sige_history" class="tab-pane clearfix no-padding active">
+        <a class="btn btn-success" data-remote="true" href="http://dev.uno.cs.walmart.com/orders/00489860_dev/add_note" id="add_note">Add New Note</a>
+<table class="table table-striped width_98_per sortable" id="allnotes">
+  <thead>
+    <tr>
+      <th data-sortcolumn="0" data-sortkey="0-0">Created time</th>
+      <th data-sortcolumn="1" data-sortkey="1-0">Reason Code</th>
+      <th data-sortcolumn="2" data-sortkey="2-0">Note Text</th>
+    </tr>
+  </thead>
+
+  <tbody>
+	 <tr class="top-border">
+	   <td data-value="04/17/2014 23:57:56">04/17/2014 23:57:56</td>
+	   <td data-value="FRAUD RESULT">FRAUD RESULT</td>
+	   <td data-value="ACCEPT| SCORE :100">ACCEPT| SCORE :100</td>
+	 </tr>
+	 <tr class="top-border">
+	   <td data-value="04/18/2014 03:21:10">04/18/2014 03:21:10</td>
+	   <td data-value="FRAUD RESULT">FRAUD RESULT</td>
+	   <td data-value="NO FRAUD DETECTED. SCORE: 421">NO FRAUD DETECTED. SCORE: 421</td>
+	 </tr>
+	 <tr class="top-border">
+	   <td data-value="10/17/2014 22:12:47">10/17/2014 22:12:47</td>
+	   <td data-value="this is also">this is also</td>
+	   <td data-value="this is a test:">this is a test:</td>
+	 </tr>
+	 <tr class="top-border">
+	   <td data-value="10/17/2014 22:31:32">10/17/2014 22:31:32</td>
+	   <td data-value="DMW NOTES">DMW NOTES</td>
+	   <td data-value="Delayed Email has been sent to customer">Delayed Email has been sent to customer</td>
+	 </tr>
+	 <tr class="top-border">
+	   <td data-value="10/17/2014 22:50:43">10/17/2014 22:50:43</td>
+	   <td data-value="FRAUD RESULT">FRAUD RESULT</td>
+	   <td data-value="hgch vgj gk h">hgch vgj gk h</td>
+	 </tr>
+	 <tr class="top-border">
+	   <td data-value="10/20/2014 20:55:19">10/20/2014 20:55:19</td>
+	   <td data-value="FRAUD RESULT">FRAUD RESULT</td>
+	   <td data-value="dsfsdfsd fdsf sdfsd
+fs
+fsd
+f sd
+fsdf df">dsfsdfsd fdsf sdfsd
+fs
+fsd
+f sd
+fsdf df</td>
+	 </tr>
+	 <tr class="top-border">
+	   <td data-value="10/20/2014 20:59:21">10/20/2014 20:59:21</td>
+	   <td data-value="FRAUD RESULT">FRAUD RESULT</td>
+	   <td data-value="dfgdfg fgdf gdfgdsgs g">dfgdfg fgdf gdfgdsgs g</td>
+	 </tr>
+	 <tr class="top-border">
+	   <td data-value="10/20/2014 21:03:04">10/20/2014 21:03:04</td>
+	   <td data-value="GOODWILLGESTURE">GOODWILLGESTURE</td>
+	   <td data-value="This is a test note text">This is a test note text</td>
+	 </tr>
+	 <tr class="top-border">
+	   <td data-value="10/20/2014 21:04:54">10/20/2014 21:04:54</td>
+	   <td data-value="FRAUD RESULT">FRAUD RESULT</td>
+	   <td data-value="hello">hello</td>
+	 </tr>
+	 <tr class="top-border">
+	   <td data-value="10/20/2014 21:05:33">10/20/2014 21:05:33</td>
+	   <td data-value="FRAUD RESULT">FRAUD RESULT</td>
+	   <td data-value="dfgdfgfdgdfg">dfgdfgfdgdfg</td>
+	 </tr>
+	 <tr class="top-border">
+	   <td data-value="10/20/2014 22:16:53">10/20/2014 22:16:53</td>
+	   <td data-value="FRAUD RESULT">FRAUD RESULT</td>
+	   <td data-value="hey! howz it going..">hey! howz it going..</td>
+	 </tr>
+	 <tr class="top-border">
+	   <td data-value="10/20/2014 22:18:42">10/20/2014 22:18:42</td>
+	   <td data-value="FRAUD RESULT">FRAUD RESULT</td>
+	   <td data-value="fdgdfg dfgd f">fdgdfg dfgd f</td>
+	 </tr>
+	 <tr class="top-border">
+	   <td data-value="10/20/2014 22:22:00">10/20/2014 22:22:00</td>
+	   <td data-value="FRAUD RESULT">FRAUD RESULT</td>
+	   <td data-value="This is a note text">This is a note text</td>
+	 </tr>
+	 <tr class="top-border">
+	   <td data-value="10/20/2014 22:22:20">10/20/2014 22:22:20</td>
+	   <td data-value="FRAUD RESULT">FRAUD RESULT</td>
+	   <td data-value="Well.. this is a note.">Well.. this is a note.</td>
+	 </tr>
+  </tbody>
+</table>
+      </section>
+      <section id="tab-payment_history" class="tab-pane clearfix no-padding">
+        <table class="table table-striped width_98_per sortable">
+    <thead>
+        <tr>
+            <th data-sortcolumn="0" data-sortkey="0-0">Type</th>
+            <th data-sortcolumn="1" data-sortkey="1-0">Card used</th>
+            <th data-sortcolumn="2" data-sortkey="2-0">Value</th>
+            <th data-sortcolumn="3" data-sortkey="3-0">Address</th>
+        </tr>
+    </thead>
+
+    <tbody>
+          <tr class="top-border">
+              <td data-value="
+                    VISA
+              ">
+                    <span class="payment-name">VISA</span>
+              </td>
+              <td data-value="1244"><span class="payment-digits">1244</span></td>
+              <td data-value="£0.00">£0.00</td>
+              <td data-value="
+                  RESIDENTIAL:
+
+  Asda Automation
+
+
+
+  1-45 the Willows,
+
+
+
+
+
+  Chelmsford,
+  
+  CM3 3DJ
+
+
+
+
+
+              ">
+                  <b>RESIDENTIAL:</b>
+<span class="block ts-address-name">
+  Asda Automation
+</span>
+
+<span class="block ts-address-street">
+  1-45 the Willows,
+</span>
+
+<span class="block ts-address-district"></span>
+
+<span class="block ts-address-city-state-zip">
+  Chelmsford,
+  <br>
+  CM3 3DJ
+</span>
+
+<span class="block ts-address-landmark"></span>
+
+
+              </td>
+          </tr>
+    </tbody>
+</table>
+      </section>
+    </div>
+  </div>
+</div>
+
+    </div>
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+
+      $("#show_order_as_text_button").bind("ajax:beforeSend", function () {
+          var modalContent = "<div class=\"modal-header\">\n  <button type=\"button\" class=\"close ts-close-icon\" data-dismiss=\"modal\" aria-hidden=\"true\">&times;<\/button>\n  <h3 class=\"modal-title ts-modal-title\">Order 00489860_dev<\/h3>\n<\/div>\n\n\n<section class=\"modal-body no-padding relative\">\n  <div class=\"loading-container abs\">\n    <div class=\"loading-image-inner\">\n      <img alt=\"Ajax loader inner\" src=\"/assets/ajax-loader-inner.gif\" />\n    <\/div>\n  <\/div>\n<\/section>\n\n<footer class=\"modal-footer\"><div class=\"buttons clearfix\">&nbsp;<\/div><\/footer>\n";
+
+          $('#order_modal .modal-content').html(modalContent);
+          $('#order_modal').modal('show');
+      });
+
+      $("#add_note").bind("ajax:beforeSend", function () {
+          var modalContent = "<div class=\"modal-header\">\n  <button type=\"button\" class=\"close ts-close-icon\" data-dismiss=\"modal\" aria-hidden=\"true\">&times;<\/button>\n  <h3 class=\"modal-title ts-modal-title\">Add a note<\/h3>\n<\/div>\n\n\n<section class=\"modal-body no-padding relative\">\n  <div class=\"loading-container abs\">\n    <div class=\"loading-image-inner\">\n      <img alt=\"Ajax loader inner\" src=\"/assets/ajax-loader-inner.gif\" />\n    <\/div>\n  <\/div>\n<\/section>\n\n<footer class=\"modal-footer\"><div class=\"buttons clearfix\">&nbsp;<\/div><\/footer>\n";
+          $('#order_modal .modal-content').html(modalContent);
+          $('#order_modal').modal('show');
+      });
+
+      $("#overall-order-history").load("/orders/customer_order_history/01749953_dev", function (response, status, xhr) {
+          if (status === "error") {
+              $("#overall-order-history").html("No History available");
+          }
+          $.bootstrapSortable();
+      });
+
+      $("#tickets_load_error").show();
+      $("#history_load_error").show();
+      $("#tab-actions-deliveries").find(".loading-image-inner").remove();
+      $("#tab-ticket-history-contents").find(".loading-image-inner").remove();
+      $("#tab-sige_history").find(".loading-image-inner").remove();
+
+
+  });
+</script>
+
+                    </section>
+                </section>
+            </div>
+        </div>
+
+        <div class="modal clearfix modal-pop border-1 hide in" id="order_modal" aria-hidden="false" style="display: block;">
+            <div class="modal-dialog">
+                <div class="modal-content"><div class="modal-header">
+  <button type="button" class="close ts-close-icon" data-dismiss="modal" aria-hidden="true">×</button>
+  <h3 class="modal-title ts-modal-title">Add Note</h3>
+</div>
+
+
+<div id="modal-content-notice"></div>
+<div id="ts-order-detail-as-text-modal" class="modal-body .ts-order-detail-as-text-modal">
+    <form accept-charset="UTF-8" action="http://dev.uno.cs.walmart.com/orders/00489860_dev/save_note" data-remote="true" html="{:id=&gt;&quot;add_note_form&quot;, :class=&gt;&quot;form-horizontal no-padding&quot;}" method="post"><div style="display:none"><input name="utf8" type="hidden" value="✓"></div>
+        <div class="modal-body" style="height:200px">
+            <div class="control-group login-user">
+                <div style="width:250px">Note Text:</div>
+                <textarea autofocus="autofocus" class="form-control" id="note_text" name="note_text" placeholder="" rows="3" style="width:400px"></textarea>
+              </div>
+              <div class="control-group login-pass">
+                  <div style="width:150px">Reason Code:</div>
+                  <select class="form-control" name="reason_code">
+                      <option>FRAUD RESULT</option>
+                      <option>ORIGINAL_ORDER_DISCOUNT_AMOUNT</option>
+                      <option>DMW NOTES</option>
+                      <option>GOODWILLGESTURE</option>
+                  </select>
+              </div>
+
+              <input id="locale" name="locale" type="hidden">
+          </div>
+          <div class="modal-footer">
+              <div class="control-group no-margin">
+                  <input class="btn btn-primary dropdown-toggle pull-left" id="login_submit" name="commit" onclick="$(&#39;#notes-spinner&#39;).show()" type="submit" value="Add Note">
+                  <input class="btn btn-cancel dropdown-toggle pull-left" id="login_submit" name="commit" data-dismiss="modal" type="submit" value="Close">
+                  <span class="inner-loader min pull-left">
+                      <div class="loading-image-inner" id="notes-spinner" style="display: none">
+                          <img alt="Ajax loader inner" src="./fdsf_files/ajax-loader-inner.gif">
+                      </div>
+                  </span>
+              </div>
+          </div>
+</form>    </div>
+
+
+</div>
+            </div>
+        </div>
+
+        <footer class="version-number fixed">
+            <span>
+                <span class="translation_missing" title="translation missing: en_US.footer.info">Info</span> - <span class="translation_missing" title="translation missing: en_US.footer.version">Version</span>
+                2.3.4
+                BR
+            </span>
+        </footer>
+
+        <!-- Atlantico version: 2.3.4 -->
+        <!-- Atlantico backend url: http://vip-qa-oms-gs-search.qa.vmcommerce.intra -->
+        <!-- Atlantico backend status: http://vip-qa-oms-gs-search.qa.vmcommerce.intra/api/status -->
+        <!-- Atlantico backend version: http://vip-qa-oms-gs-search.qa.vmcommerce.intra/api/status/version -->
+        <!-- Atlantico notification url: http://napsao-nix-d-pan03.dev.vmcommerce.intra:9292/faye -->
+
+        <script type="text/javascript">
+          $(document).ready(function () {
+              $("#search_form").submit(function( event ) {
+                toggleLoading();
+              });
+              $("#search-icon").click(function( event ) {
+                $("#search_form").submit();
+              });
+              $('#order_modal').modal({show: false});
+
+              $("#search_button").click(function () {
+                  toggleSearch();
+              });
+
+              $("#close_search").click(function () {
+                  toggleSearch();
+              });
+          });
+          function toggleSearch() {
+              $("#search").toggle();
+              $("#overlay").toggle();
+              $("#search_form .search-query").focus();
+          }
+
+          function toggleLoading() {
+              $(".head-spinner").toggle();
+          }
+        </script>
+    
+
+<div class="modal-backdrop  in"></div></body></html>

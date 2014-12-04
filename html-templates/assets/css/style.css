@@ -1,0 +1,14 @@
+.courosal_image {
+    height: 300px !important;
+    width: 100%;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus{
+    color: #fff;
+    background-color: #D34945;
+}
+
+a {
+    color: #D34945;
+    text-decoration: none;
+}
