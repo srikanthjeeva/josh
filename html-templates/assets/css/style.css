@@ -1,3 +1,9 @@
+
+body{
+    background-color: #FFE0B2;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
 .courosal_image {
     height: 300px !important;
     width: 100%;
@@ -11,4 +17,63 @@
 a {
     color: #D34945;
     text-decoration: none;
+}
+
+.blog-main {
+font-size: 18px;
+line-height: 1.5;
+}
+
+h3, .h3 {
+color: #C94542;
+}
+
+h2, .h2 {
+color: #C94542;
+}
+h4, .h4 {
+color: #C94542;
+}
+
+.h4_text{
+    font-size: 17px;
+    padding: 10px;
+}
+
+.bg-desc{
+    background-color: #FFF3E0;
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+text-decoration: none;
+background-color: #D34945;
+color: white;
+}
+.height_30{
+    height: 30px;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.header_hr{
+    border-top: 1px solid #E57373 !important;
+}
+
+a:hover, a:focus {
+    color: #E57373;
+    text-decoration: underline;
 }
