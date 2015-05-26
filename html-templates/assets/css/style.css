@@ -1,38 +1,56 @@
 
 body{
-    background-color: #FFE0B2;
+    background-color: white;
     font-family: Georgia, "Times New Roman", Times, serif;
-}
+    color: black;
+    /* background-image: linear-gradient(to bottom, white 0%, #f4f9fc 100%) */}
 
 .courosal_image {
     height: 300px !important;
     width: 100%;
 }
 
+.nav-pills > li > a {
+    /* padding-right: 0; */
+    /* padding-left: 0; */
+    /* font-size: 15px; */
+    /* font-weight: bold; */
+    /* border-bottom: 2px solid transparent; */
+    color: #004f78;
+}
+
 .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus{
-    color: #fff;
-    background-color: #D34945;
+    /* color: #428BCA; */
+    /* background-color: transparent; */
+    /* border-bottom-color: #428BCA; */
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+    text-decoration: none;
+    border-bottom-color: #428BCA;
+    color: #428BCA;
+    background-color: transparent;
 }
 
 a {
-    color: #D34945;
+    color: #003856;
     text-decoration: none;
 }
 
 .blog-main {
-font-size: 18px;
-line-height: 1.5;
+    font-size: 18px;
+    line-height: 1.5;
 }
 
 h3, .h3 {
-color: #C94542;
+    color: #004f78;
 }
 
 h2, .h2 {
-color: #C94542;
+    color: #004f78;
 }
 h4, .h4 {
-color: #C94542;
+    color: #004f78;
 }
 
 .h4_text{
@@ -41,14 +59,10 @@ color: #C94542;
 }
 
 .bg-desc{
-    background-color: #FFF3E0;
+    /* background-color: #FFF3E0; */
 }
 
-.nav>li>a:hover, .nav>li>a:focus {
-text-decoration: none;
-background-color: #D34945;
-color: white;
-}
+
 .height_30{
     height: 30px;
 }
@@ -58,22 +72,167 @@ color: white;
 
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
-  margin-bottom: 20px;
-  text-align: center;
+    margin-bottom: 20px;
+    text-align: center;
 }
 .marketing h2 {
-  font-weight: normal;
+    font-weight: normal;
 }
 .marketing .col-lg-4 p {
-  margin-right: 10px;
-  margin-left: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .header_hr{
-    border-top: 1px solid #E57373 !important;
+    border-top: 1px solid #004f78 !important;
 }
 
 a:hover, a:focus {
-    color: #E57373;
+    color: #004f78;
     text-decoration: underline;
+}
+
+.carousel {
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.rounded_image{
+    width: 100%;
+    height: 200px;
+}
+.logo{
+    height: 50px;
+}
+
+.mid-header{
+    background-color: #568ED4; 
+    margin-top: -60px;
+    text-align: center;
+    letter-spacing: 4px;
+    height: 35px;
+    padding-top: 7px;
+    color: white;
+}
+
+
+.carousel-control {
+  padding-top:10%;
+  width:5%;
+}
+
+.navbar-inverse {
+  background-color: white;
+  border-color: white;
+}
+
+.img-responsive{
+    width: 250px;
+    height: 250px;
+
+}
+
+.cor-two{
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#e0e0e0),color-stop(15%,#fff),color-stop(85%,#fff),color-stop(100%,#fff));
+    height: 430px;
+}
+
+.img-up-even{
+  height: 200px;
+  width: 200px;
+  margin-left: 65px;
+}
+
+.up-eve-txt{
+    margin-left: 31px;
+    margin-top: -8px;
+    list-style-type: none;
+}
+
+.up-eve-txt li{
+    font-weight: bold;
+}
+
+.up-eve-italic{
+    font-weight: normal;
+    font-style: italic;
+}
+
+.ann-links{
+    list-style-type: none;
+}
+
+.ann-links-div{
+    background-color: #F2F2F2
+}
+
+
+.ann-links-div tr td{
+    vertical-align: top;
+    padding-left: 10px;
+}
+
+.footer{
+    margin-top: 0px
+}
+
+.navbar-wrapper .container{
+    margin-top: 15px
+}
+
+.blog-post p{
+    font-size: 16px
+}
+
+.blog-post h3{
+    font-size: 18px
+}
+
+.blog-img{
+    float: left;
+    height: 196px;
+    padding: 6px 16px 0 0;
+    width: 300px;
+}
+
+.blog-post .img-circle{
+   width: 140px; 
+   height: 140px; 
+}
+
+.gallery .img-circle{
+   width: 140px; 
+   height: 140px; 
+}
+
+.mid-jtml-img{
+  margin: 50px 0 0 65px;
+}
+
+@media screen and (max-width: 1000px) {
+    .mid-header {
+        height:55px
+    }
+    
+    .main-center h2{
+        text-align: left !important;
+        float: left !important;
+    }
+    
+    .mid-jtml-img{
+        margin-left: -190px;
+        text-align: left;
+        padding-top: 5px;
+        height: 140px;
+    }
+    
+    .main-center h4{
+        text-align: left !important;
+        margin-left: 38px;
+    }
+    
+    .up-eve-txt{
+        margin-left: 0px
+    }
+   
 }

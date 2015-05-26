@@ -29,27 +29,63 @@
     <!-- NAVBAR
     ================================================== -->
     <body>
-        <div class="navbar-wrapper">
-            <div class="container">
-                <div class="header"> 
-                    <ul class="nav nav-pills pull-right" role="tablist">
-                        <li role="presentation"><a href="index.html">Home</a></li>
-                        <li role="presentation" class="active"><a href="about.html">About</a></li>
-                        <li role="presentation"><a href="events.html">Events</a></li>
-                        <li role="presentation"><a href="gallery.html">Gallery</a></li>
-                        <li role="presentation"><a href="join-us.html">Join</a></li>
-                    </ul>
-                    <h3 class="text-muted"><img src="assets/images/logo.png" /></h3>
+        <nav class="navbar navbar-inverse">
+            <div class="navbar-wrapper">
+                <div class="container">
+                    <div class="header">
+                        <ul class="nav nav-pills pull-right" role="tablist">
+                            <li role="presentation"><a href="index.html">Home</a></li>
+                            <li role="presentation" class="active"><a href="about.html">About</a></li>
+                            <li role="presentation"><a href="events.html">Events</a></li>
+                            <li role="presentation"><a href="gallery.html">Gallery</a></li>
+                            <li role="presentation"><a href="join-us.html">Join</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+        </nav>
+
+        <div class="carousel slide" id="myCarousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="active item">
+                    <img alt="" src="assets/images/josh-banner1.jpg" class="courosal_image">
+                    <!--                    <div class="carousel-caption">
+                                            <h1>JOSH 2014</h1>
+                                            <p>Wonderful event and Good description</p>
+                                        </div>-->
+                </div>
+                <!--<div class="item">
+                    <img alt="" src="assets/images/banner1.jpg" class="courosal_image">
+                    &lt;!&ndash;                    <div class="carousel-caption">
+                                            <h1>Join us</h1>
+                                            <p>think you want to be part of this wonderful team?</p>
+                                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Register</a></p>
+                                        </div>&ndash;&gt;
+                </div>
+                <div class="item">
+                    <img alt="" src="assets/images/banner1.jpg" class="courosal_image">
+                    &lt;!&ndash;                    <div class="carousel-caption">
+                                            <p>Fill text here</p>
+                                        </div>&ndash;&gt;
+                </div>-->
+            </div>
+            <!--<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>-->
         </div>
-
-
-        <!-- Carousel
-        ================================================== -->
-
-
-
+        <div class="mid-header">
+            An ALUMNI FORUM for ST. JAMES MATRIC. HR. SEC. SCHOOL, TRICHY
+        </div>
 
         <!-- Marketing messaging and featurettes
         ================================================== -->
@@ -62,40 +98,34 @@
                     <div class="blog-post">
                         <h2 class="blog-post-title">About Us</h2>
                         <hr class="featurette-divider header_hr">
-                        <h3>Mission</h3>
-                        <p>To  tap skills and to guide the present student community in academic and extracurricular activities, making them confident to face the competitive world. </p>
                         <h3>Vision</h3>
                         <p>To lead and aid the James community to be socially responsible, to dare to dream and achieve and hope without fear.</p>
-                        <h3>St James Matric Higher Secondary School, Trichy</h3>
-                        <p>St.James was established in the year 1982 as a fruition of untiring efforts of Late.Rev.Fr.Susai Raj. Located in the heart of the city, this pinnacle of excellence boasts a strength of 3300 students whose academic and extra-curricular obligations are nurtured under the tutelage of academically and intellectually proficient teaching and non-teaching staff. With over three decades of history, St.James has a consistent academic record of district and state level toppers in both matriculation board and Government higher secondary examinations every year. The school has played a vital role in shaping its students into dexterous and erudite individuals capable of holding various positions of responsibilities braving against all odds. St.James has Laurels of alumni many of whom are virtuoso in their respective fields of interest. True to its motto “Dare and Hope” St.James has dared to hope and has achieved the insurmountable task of retaining its glory for 32 long opulent years and will continue its endeavours for times infinite.</p>
-                        <h3>JOSH - The Phoenix</h3>
-                        <p>
-                            In today’s corporate world scenario where major significance is given to referrals, alumni association has become the need of the hour. 
-                            The alumni act as a goodwill ambassador representing all that is superlative and ideal about their respective institutions. Apart from providing a platform for cherishing the nostalgic moments of their yester years, 
-                            the alumni plays a significant part in providing educational and career guidance to the existing students. St.James has played a vital role in shaping its pupil into responsible and equitable individuals. 
-                            This provided the spark for concocting JOSH, uniting students from its nascent 1993 batch to the neoteric batch of 2013. JOSH-THE PHOENIX came into existence on January 2010, eponymous with the phoenix bird of the Greek mythology. Initially THE PHOENIX comprised of 150 members of 2008 and 2009 batch, which due to the untiring efforts of the alumni has outgrown into a colossal group that boasts a current strength of more than a thousand members.
-                        </p>
+                        <h3>Mission</h3>
+                        <p>To  tap skills and to guide the present student community in academic and extracurricular activities, making them confident to face the competitive world. </p>
+                        <div>
+                            <img src="assets/images/about-james.jpg" class="img-rounded blog-img"/>
+                            <h3>St James Matric Higher Secondary School, Trichy</h3>
+                            <p>St.James was established in the year 1982 as a fruition of untiring efforts of Late.Rev.Fr.Susai Raj. Located in the heart of the city, this pinnacle of excellence boasts a strength of 3300 students whose academic and extra-curricular obligations are nurtured under the tutelage of academically and intellectually proficient teaching and non-teaching staff. With over three decades of history, St.James has a consistent academic record of district and state level toppers in both matriculation board and Government higher secondary examinations every year. The school has played a vital role in shaping its students into dexterous and erudite individuals capable of holding various positions of responsibilities braving against all odds. St.James has Laurels of alumni many of whom are virtuoso in their respective fields of interest. True to its motto “Dare and Hope” St.James has dared to hope and has achieved the insurmountable task of retaining its glory for 32 long opulent years and will continue its endeavours for times infinite.</p>
+                        </div>
+                        <div>
+                            <img src="assets/images/about-josh.jpg" class="img-rounded blog-img"/>
+                            <h3>JOSH - The Phoenix</h3>
+                            <p>
+                                In today’s corporate world scenario where major significance is given to referrals, alumni association has become the need of the hour. 
+                                The alumni act as a goodwill ambassador representing all that is superlative and ideal about their respective institutions. Apart from providing a platform for cherishing the nostalgic moments of their yester years, 
+                                the alumni plays a significant part in providing educational and career guidance to the existing students. St.James has played a vital role in shaping its pupil into responsible and equitable individuals. 
+                                This provided the spark for concocting JOSH, uniting students from its nascent 1993 batch to the neoteric batch of 2013. JOSH-THE PHOENIX came into existence on January 2010, eponymous with the phoenix bird of the Greek mythology. Initially THE PHOENIX comprised of 150 members of 2008 and 2009 batch, which due to the untiring efforts of the alumni has outgrown into a colossal group that boasts a current strength of more than a thousand members.
+                            </p>
+                        </div>
                         <hr>
                     </div><!-- /.blog-post -->
-                    <nav>
-                        <ul class="pager">
-                            <li><a href="events.html">Events</a></li>
-                            <li><a href="gallery.html">Gallery</a></li>
-                        </ul>
-                    </nav>
-
                 </div><!-- /.blog-main -->
-
                 <!-- /.blog-sidebar -->
-
             </div>
-            <div class="height_30"></div>
-            <footer>
-                <p>&copy; 2014 St.James Alumni, JOSH. 
-            </footer>
-            
         </div><!-- /.container -->
-
+        <div class="mid-header footer">
+            Dare & Hope
+        </div>
         <!-- Bootstrap core JavaScript
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
