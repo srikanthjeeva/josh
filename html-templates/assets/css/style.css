@@ -213,6 +213,10 @@ a:hover, a:focus {
     margin-bottom: 0px;
 }
 
+#myCarousel{
+    margin-top: 63px;
+}
+
 @media screen and (max-width: 1000px) {
     .mid-header {
         height:55px
