@@ -213,8 +213,8 @@ a:hover, a:focus {
     margin-bottom: 0px;
 }
 
-#myCarousel{
-    margin-top: 63px;
+.carousel-indicators {
+    top: 255px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -243,10 +243,4 @@ a:hover, a:focus {
         margin-left: 0px
     }
    
-}
-
-@media screen and (min-width: 768px) {
-    .carousel-indicators {
-      bottom: 85px;
-    }
 }
